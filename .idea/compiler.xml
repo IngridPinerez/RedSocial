@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Mensaje" />
+        <module name="Amistad" />
+        <module name="Publicaciones" />
+        <module name="Usuarios" />
+        <module name="Comentario" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Amistad" target="17" />
+      <module name="Comentario" target="17" />
+      <module name="Mensaje" target="17" />
+      <module name="Publicaciones" target="17" />
+      <module name="Usuarios" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Amistad" options="-parameters" />
+      <module name="Comentario" options="-parameters" />
+      <module name="Mensaje" options="-parameters" />
+      <module name="Publicaciones" options="-parameters" />
+      <module name="Usuarios" options="-parameters" />
+    </option>
+  </component>
+</project>
