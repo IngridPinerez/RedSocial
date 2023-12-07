@@ -12,14 +12,28 @@ public class Amistad {
     protected Long id;
 
     @Column
-    private boolean isAceptado;
+    private String isAceptado ="Pendiente";
 
     @Column(nullable = true)
-    private Date desde;
+    private Date fecha;
 
     @ManyToOne(optional = false)
     Usuario solicitante;
 
     @ManyToOne(optional = false)
     Usuario solicitado;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getIsAceptado() {
+        return isAceptado;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+
 }

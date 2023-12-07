@@ -8,13 +8,13 @@ import com.makaia.back4.JpaMySql.exceptions.RedSocialApiException;
 import com.makaia.back4.JpaMySql.publisher.Publisher;
 import com.makaia.back4.JpaMySql.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.StreamSupport;
 
 @Service
@@ -69,4 +69,15 @@ public class UsuarioService {
                 .stream(this.repository.findAll().spliterator(), false)
                 .toList();
     }
+
+    public Usuario getUsuarioById(Long id) {
+        Optional<Usuario> optUsuario = this.repository.findById(id);
+        if (!optUsuario.isPresent()) {
+            throw  new RedSocialApiException("Usuario no existe");
+        }
+        return optUsuario.get();
+    }
+
+
+
 }
