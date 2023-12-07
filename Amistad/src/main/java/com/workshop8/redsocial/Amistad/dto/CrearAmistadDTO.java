@@ -2,16 +2,16 @@ package com.workshop8.redsocial.Amistad.dto;
 
 import java.util.Date;
 
-public class CrearDTO {
+public class CrearAmistadDTO {
 
     private Date fecha;
     private Long solicitanteId;
     private Long solicitadoId;
 
-    public CrearDTO() {
+    public CrearAmistadDTO() {
     }
 
-    public CrearDTO(Date fecha, Long solicitanteId, Long solicitadoId) {
+    public CrearAmistadDTO(Date fecha, Long solicitanteId, Long solicitadoId) {
         this.fecha = fecha;
         this.solicitanteId = solicitanteId;
         this.solicitadoId = solicitadoId;

@@ -9,6 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface UsuarioRepository extends CrudRepository<Usuario, Long> {
     @Query
     public Usuario findByNombre(String nombre);
-    @Query
-    public Usuario findByApellido(String nombre);
+
 }

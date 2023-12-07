@@ -1,6 +1,6 @@
 package com.workshop8.redsocial.Amistad.controller;
 
-import com.workshop8.redsocial.Amistad.dto.CrearDTO;
+import com.workshop8.redsocial.Amistad.dto.CrearAmistadDTO;
 import com.workshop8.redsocial.Amistad.entities.Amistad;
 import com.workshop8.redsocial.Amistad.entities.Usuario;
 import com.workshop8.redsocial.Amistad.feignClient.IUsuarioFeignClient;
@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1/amistad")
@@ -25,7 +24,7 @@ public class Controller {
     }
 
     @PostMapping()
-    public Amistad crearUsuario(@RequestBody CrearDTO dto) {
+    public Amistad crearUsuario(@RequestBody CrearAmistadDTO dto) {
         return this.service.crear(dto);
     }
 
@@ -44,6 +43,10 @@ public class Controller {
         return this.service.getAmistadById(id);
     }
 
+    @PutMapping("/{id}/{respuesta}")
+    public Amistad updateAmistad(@PathVariable("id") Long id, @PathVariable("respuesta") String respuesta){
+        return this.service.responderAmistad(id,respuesta);
+    }
 
 
 }
