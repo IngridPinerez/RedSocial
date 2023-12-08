@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1/comentarios")
@@ -26,5 +27,20 @@ public class Controller {
     @GetMapping()
     public List<Comentario> listar(){
         return  this.service.listar();
+    }
+
+    @GetMapping("/comentario/{id}")
+    public Optional<Comentario> buscar(@PathVariable("id") Long id) {
+        return this.service.buscar(id);
+    }
+
+    @PutMapping("/comentario/{id}")
+    public Comentario actualizar(@PathVariable("id") Long id, @RequestBody CrearDTO body) {
+        return this.service.actualizar(id, body);
+    }
+
+    @DeleteMapping("/comentario/{id}")
+    public void borrar(@PathVariable("id") Long id) {
+        this.service.borrar(id);
     }
 }

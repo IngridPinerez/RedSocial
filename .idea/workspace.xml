@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88b3b347-00fc-4b2a-86dc-670a0759094c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/consumer/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/publisher/Publisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/publisher/PublisherConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/dtos/CrearDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/dtos/CrearDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Amistad.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Comentario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Mensaje.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Publicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Publicacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/repositories/AmistadRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/repositories/MensajeRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/consumer/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publicacion/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Publicacion/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usuario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +155,7 @@
       <workItem from="1701917859378" duration="793000" />
       <workItem from="1701958264077" duration="22973000" />
       <workItem from="1702055593107" duration="5668000" />
-      <workItem from="1702064056978" duration="3055000" />
+      <workItem from="1702064056978" duration="5536000" />
     </task>
     <servers />
   </component>
