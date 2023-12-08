@@ -1,8 +1,5 @@
 package com.workshop8.redsocial.Comentario.dtos;
 
-import com.workshop8.redsocial.Comentario.entities.Publicacion;
-import com.workshop8.redsocial.Comentario.entities.Usuario;
-
 public class CrearDTO {
     private String contenido;
 

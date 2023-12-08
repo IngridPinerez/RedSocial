@@ -26,17 +26,17 @@ public class Service {
         this.publicacionRepository = publicacionRepository;
     }
 
-    public void crear(CrearDTO dto) {
+    public Comentario crear(CrearDTO dto) {
         Usuario usuario = this.usuarioRepository
                 .findById(dto.getUsuarioId())
                 .orElseThrow(
-                        () -> new RedSocialApiException("El usuario no existe y no puede crear comentarios"));
+                        () -> new RedSocialApiException("El usuario no existe"));
         Publicacion publicacion = this.publicacionRepository
                 .findById(dto.getPublicacionId())
                 .orElseThrow(
-                        () -> new RedSocialApiException("La publicacion no existe y no puede crear comentarios"));
+                        () -> new RedSocialApiException("La publicacion no existe"));
         Comentario nuevoComentario = new Comentario(dto.getContenido(), usuario, publicacion);
-        this.repository.save(nuevoComentario);
+        return this.repository.save(nuevoComentario);
     }
 
     public List<Comentario> listar() {

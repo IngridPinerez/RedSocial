@@ -32,24 +32,4 @@ public class Publicacion {
         this.contenido = contenido;
         this.usuario = usuario;
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getContenido() {
-        return contenido;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public List<Comentario> getComentarios() {
-        return comentarios;
-    }
 }

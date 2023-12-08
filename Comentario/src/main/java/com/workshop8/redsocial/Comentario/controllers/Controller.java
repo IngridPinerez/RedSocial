@@ -19,8 +19,8 @@ public class Controller {
     }
 
     @PostMapping()
-    public void crear(@RequestBody CrearDTO dto) {
-        this.service.crear(dto);
+    public Comentario crear(@RequestBody CrearDTO dto) {
+        return this.service.crear(dto);
     }
 
     @GetMapping()

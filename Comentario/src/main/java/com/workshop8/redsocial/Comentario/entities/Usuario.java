@@ -56,12 +56,6 @@ public class Usuario {
     @OneToMany(mappedBy = "usuario")
     List<Publicacion> publicaciones;
 
-    @OneToMany(mappedBy = "emisor")
-    List<Mensaje> mensajesEnviados;
-
-    @OneToMany(mappedBy = "receptor")
-    List<Mensaje> mensajesRecibidos;
-
     @OneToMany(mappedBy = "usuario")
     List<Comentario> comentarios;
 
