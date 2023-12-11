@@ -33,11 +33,6 @@ public class Controller {
         return  this.service.listar();
     }
 
-    @GetMapping("/amistad/{id}")
-    public Usuario getUsuarioById(@PathVariable("id") Long id){
-        return this.iUsuarioFeignClient.getUsuarioById(id);
-    }
-
     @GetMapping("/{id}")
     public Amistad getAmistadById(@PathVariable("id") Long id){
         return this.service.getAmistadById(id);

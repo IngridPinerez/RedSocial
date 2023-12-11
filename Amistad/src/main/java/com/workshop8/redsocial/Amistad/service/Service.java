@@ -18,7 +18,8 @@ import java.util.stream.StreamSupport;
 public class Service {
 
     @Autowired
-            IUsuarioFeignClient iUsuarioFeignClient;
+    IUsuarioFeignClient iUsuarioFeignClient;
+
     AmistadRepository repository;
     UsuarioRepository usuarioRepository;
 
@@ -38,40 +39,38 @@ public class Service {
 
         if (dto.getSolicitanteId() == dto.getSolicitadoId()){
             throw new AmistadApiException("El Id del solicitante no puede ser el mismo que el Id del solicitado",HttpStatusCode.valueOf(400));
-        } else{
-
         }
-        Amistad nuevaAmistad = new Amistad(dto.getFecha(),usuarioSolicitante,usuarioSolicitado);
+        Amistad nuevaAmistad = new Amistad(dto.getIsAceptado(),dto.getFecha(),usuarioSolicitante,usuarioSolicitado);
         return this.repository.save(nuevaAmistad);
     }
 
     public List<Amistad> listar() {
-        return StreamSupport
-                .stream(this.repository.findAll().spliterator(), false)
-                .toList();
+        List<Amistad> lista = StreamSupport.stream(this.repository.findAll().spliterator(), false).toList();
+        if (lista.isEmpty()){
+            throw new AmistadApiException("Aun no hay soliciitudes de amistad creadas",HttpStatusCode.valueOf(500));
+        }
+        return lista;
     }
 
     public Amistad getAmistadById(Long id) {
         Optional<Amistad> optAmistad = this.repository.findById(id);
         if (!optAmistad.isPresent()) {
-            throw  new AmistadApiException("Amistad no existe");
+            throw  new AmistadApiException("Amistad no existe",HttpStatusCode.valueOf(500));
         }
         return optAmistad.get();
     }
 
     public Amistad responderAmistad(Long id,String respuesta){
+        Amistad optAmistad = this.repository.findById(id).get();
 
-        Optional<Amistad> optAmistad = this.repository.findById(id);
-        if (!optAmistad.isPresent()){
-            throw  new AmistadApiException("Amistad no existe");
-        }else if(optAmistad.get().getIsAceptado()=="Pendiente"){
-            optAmistad.get().setIsAceptado(respuesta);
-        }
-        else {
-            throw new AmistadApiException("La solicitud de amistad ya fue respondida");
-        }
+        if (optAmistad == null){
+            throw new AmistadApiException("Amistad no existe",HttpStatusCode.valueOf(500));
 
-        return optAmistad.get();
+        }else if (optAmistad.getIsAceptado().equals("Aceptada")||equals("Rechazada")){
+            throw new AmistadApiException("La solicitud de amistad con " + id + " ya fue respondida",HttpStatusCode.valueOf(500));
+        }
+        optAmistad.setIsAceptado(respuesta);
+        return this.repository.save(optAmistad);
     }
 
 

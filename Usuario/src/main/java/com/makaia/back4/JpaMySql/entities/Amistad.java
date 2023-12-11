@@ -11,8 +11,8 @@ public class Amistad {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
 
-    @Column
-    private String isAceptado ="Pendiente";
+    @Column(nullable = true)
+    private String isAceptado;
 
     @Column(nullable = true)
     private Date fecha;
@@ -35,5 +35,7 @@ public class Amistad {
         return fecha;
     }
 
-
+    public void setIsAceptado(String isAceptado) {
+        this.isAceptado = isAceptado;
+    }
 }

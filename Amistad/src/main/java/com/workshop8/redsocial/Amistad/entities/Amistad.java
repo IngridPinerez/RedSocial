@@ -11,8 +11,8 @@ public class Amistad {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
 
-    @Column
-    private String isAceptado = "Pendiente";
+    @Column(nullable = false)
+    private String isAceptado;
 
     @Column(nullable = false)
     private Date fecha;
@@ -26,7 +26,8 @@ public class Amistad {
     public Amistad() {
     }
 
-    public Amistad(Date fecha, Usuario solicitante, Usuario solicitado) {
+    public Amistad(String isAceptado,Date fecha, Usuario solicitante, Usuario solicitado) {
+        this.isAceptado = isAceptado;
         this.fecha = fecha;
         this.solicitante = solicitante;
         this.solicitado = solicitado;
