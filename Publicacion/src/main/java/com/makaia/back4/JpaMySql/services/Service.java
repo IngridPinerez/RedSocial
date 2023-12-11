@@ -4,6 +4,7 @@ import com.makaia.back4.JpaMySql.dtos.CrearDTO;
 import com.makaia.back4.JpaMySql.entities.Publicacion;
 import com.makaia.back4.JpaMySql.entities.Usuario;
 import com.makaia.back4.JpaMySql.exceptions.RedSocialApiException;
+import com.makaia.back4.JpaMySql.publisher.Publisher;
 import com.makaia.back4.JpaMySql.repositories.PublicacionRepository;
 import com.makaia.back4.JpaMySql.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,11 +16,13 @@ import java.util.stream.StreamSupport;
 public class Service {
     PublicacionRepository repository;
     UsuarioRepository usuarioRepository;
+    Publisher publisher;
 
     @Autowired
-    public Service(PublicacionRepository repository, UsuarioRepository usuarioRepository) {
+    public Service(PublicacionRepository repository, UsuarioRepository usuarioRepository, Publisher publisher) {
         this.repository = repository;
         this.usuarioRepository = usuarioRepository;
+        this.publisher = publisher;
     }
 
     public Publicacion crear(CrearDTO dto) {
@@ -27,8 +30,17 @@ public class Service {
                 .findById(dto.getUsuarioId())
                 .orElseThrow(
                         () -> new RedSocialApiException("El usuario no existe y no puede crear publicaciones"));
-        Publicacion nuevoUsuario = new Publicacion(dto.getTitulo(), dto.getContenido(), usuario);
-        return this.repository.save(nuevoUsuario);
+        Publicacion nuevaPublicacion = new Publicacion(dto.getTitulo(), dto.getContenido(), usuario);
+
+        nuevaPublicacion = this.repository.save(nuevaPublicacion);
+
+        crearComentarioPorDefecto(dto.getUsuarioId(), nuevaPublicacion.getId());
+
+        return nuevaPublicacion;
+    }
+
+    private void crearComentarioPorDefecto(Long userId, Long postId) {
+        this.publisher.send(userId+","+postId);
     }
 
     public List<Publicacion> listar() {
