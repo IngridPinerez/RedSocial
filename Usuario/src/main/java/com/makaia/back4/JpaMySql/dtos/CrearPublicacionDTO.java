@@ -1,10 +1,9 @@
 package com.makaia.back4.JpaMySql.dtos;
 
 public class CrearPublicacionDTO {
+
     private String titulo;
-
     private String contenido;
-
     private Long usuarioId;
 
     public CrearPublicacionDTO() {

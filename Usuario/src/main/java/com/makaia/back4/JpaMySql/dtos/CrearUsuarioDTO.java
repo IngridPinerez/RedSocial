@@ -1,12 +1,10 @@
 package com.makaia.back4.JpaMySql.dtos;
 
 public class CrearUsuarioDTO {
+
     private String nombre;
-
     private String apellido;
-
     private String direccion;
-
     private Integer edad;
 
     public CrearUsuarioDTO() {

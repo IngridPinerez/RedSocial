@@ -65,12 +65,12 @@ public class Usuario {
         return mensajesRecibidos;
     }
 
-    public List<Amistad> getSolicitudasEnviadas() {
-        return solicitudasEnviadas;
+    public List<Amistad> getSolicitudesEnviadas() {
+        return solicitudesEnviadas;
     }
 
-    public List<Amistad> getSolicitudasRecibidas() {
-        return solicitudasRecibidas;
+    public List<Amistad> getSolicitudesRecibidas() {
+        return solicitudesRecibidas;
     }
 
     public List<Comentario> getComentarios() {
@@ -87,10 +87,10 @@ public class Usuario {
     List<Mensaje> mensajesRecibidos;
 
     @OneToMany(mappedBy = "solicitante")
-    List<Amistad> solicitudasEnviadas;
+    List<Amistad> solicitudesEnviadas;
 
     @OneToMany(mappedBy = "solicitado")
-    List<Amistad> solicitudasRecibidas;
+    List<Amistad> solicitudesRecibidas;
 
     @OneToMany(mappedBy = "usuario")
     List<Comentario> comentarios;

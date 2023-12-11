@@ -8,20 +8,20 @@ import com.makaia.back4.JpaMySql.exceptions.RedSocialApiException;
 import com.makaia.back4.JpaMySql.publisher.Publisher;
 import com.makaia.back4.JpaMySql.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.StreamSupport;
 
 @Service
 public class UsuarioService {
-    UsuarioRepository repository;
 
-    Publisher publisher;
+    private UsuarioRepository repository;
+    private Publisher publisher;
 
     @Autowired
     public UsuarioService(UsuarioRepository repository, Publisher publisher) {
@@ -32,7 +32,7 @@ public class UsuarioService {
     public Usuario crear(CrearUsuarioDTO dto) {
         Usuario exists = this.repository.findByNombre(dto.getNombre());
         if (exists != null) {
-            throw new RedSocialApiException("User aleady exists", HttpStatusCode.valueOf(400));
+            throw new RedSocialApiException("El usuario ya existe", HttpStatusCode.valueOf(400));
         }
         Usuario nuevoUsuario = new Usuario(dto.getNombre(), dto.getApellido(), dto.getDireccion(), dto.getEdad());
         nuevoUsuario = this.repository.save(nuevoUsuario);
@@ -48,25 +48,22 @@ public class UsuarioService {
         this.publisher.send(userId);
     }
 
-    private Publicacion crearPublicacionPorDefectoOld(Long userId) {
-        RestTemplate template = new RestTemplate();
-        CrearPublicacionDTO publicacionDto = new CrearPublicacionDTO("Mi primera publicacion",
-                "El contenido",
-                userId);
-        ResponseEntity<Publicacion> responseEntity = template.postForEntity("http://localhost:8080/api/v1/publicaciones",
-                publicacionDto,
-                Publicacion.class);
-        return responseEntity.getBody();
-    }
-
-    private boolean isEmpty(String valor) {
-        return valor == null || valor.isEmpty();
-    }
-
-
     public List<Usuario> listar() {
-        return StreamSupport
-                .stream(this.repository.findAll().spliterator(), false)
-                .toList();
+        List<Usuario> lista = StreamSupport.stream(this.repository.findAll().spliterator(), false).toList();
+        if (lista.isEmpty()){
+            throw new RedSocialApiException("Aun no hay usuarios creados",HttpStatusCode.valueOf(500));
+        }
+        return lista;
+
     }
+
+    public Usuario getUsuarioById(Long id) {
+        Optional<Usuario> optUsuario = this.repository.findById(id);
+        if (!optUsuario.isPresent()) {
+            throw  new RedSocialApiException("Usuario no existe",HttpStatusCode.valueOf(500));
+        }
+        return optUsuario.get();
+    }
+
+
 }

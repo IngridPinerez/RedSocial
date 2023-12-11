@@ -52,4 +52,5 @@ public class Publicacion {
     public List<Comentario> getComentarios() {
         return comentarios;
     }
+
 }
