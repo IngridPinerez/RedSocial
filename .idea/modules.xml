@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Amistad/Amistad.iml" filepath="$PROJECT_DIR$/Amistad/Amistad.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Comentario/Comentario.iml" filepath="$PROJECT_DIR$/Comentario/Comentario.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Mensaje/Mensaje.iml" filepath="$PROJECT_DIR$/Mensaje/Mensaje.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Publicacion/Publicaciones.iml" filepath="$PROJECT_DIR$/Publicacion/Publicaciones.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Usuario/Usuarios.iml" filepath="$PROJECT_DIR$/Usuario/Usuarios.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Workshop8.iml" filepath="$PROJECT_DIR$/.idea/Workshop8.iml" />
     </modules>
   </component>
