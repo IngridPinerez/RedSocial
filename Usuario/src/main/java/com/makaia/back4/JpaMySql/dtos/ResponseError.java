@@ -1,8 +1,8 @@
 package com.makaia.back4.JpaMySql.dtos;
 
 public class ResponseError {
-    private String message;
 
+    private String message;
     private Integer code;
 
     public ResponseError(String message, Integer code) {

@@ -10,7 +10,6 @@ import com.makaia.back4.JpaMySql.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @org.springframework.stereotype.Service
@@ -49,4 +48,6 @@ public class Service {
                 .stream(this.repository.findAll().spliterator(), false)
                 .toList();
     }
+
+
 }

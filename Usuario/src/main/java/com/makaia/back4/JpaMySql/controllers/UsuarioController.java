@@ -27,4 +27,9 @@ public class UsuarioController {
     public List<Usuario> listarUsuarios(){
         return  this.service.listar();
     }
+
+    @GetMapping("/usuario/{id}")
+    public Usuario getUsuarioById(@PathVariable("id") Long id){
+        return service.getUsuarioById(id);
+    }
 }
