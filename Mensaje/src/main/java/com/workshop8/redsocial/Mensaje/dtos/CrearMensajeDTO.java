@@ -3,25 +3,16 @@ package com.workshop8.redsocial.Mensaje.dtos;
 import com.workshop8.redsocial.Mensaje.entities.Usuario;
 
 public class CrearMensajeDTO {
-    private long id;
+
     private String contenido;
-    private Usuario emisor;
-    private Usuario receptor;
+    private Long emisor;
+    private Long receptor;
 
 
-    public CrearMensajeDTO(long id, String contenido, Usuario emisor, Usuario receptor) {
-        this.id = id;
+    public CrearMensajeDTO(String contenido, Long emisor, Long receptor) {
         this.contenido = contenido;
         this.emisor = emisor;
         this.receptor = receptor;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getContenido() {
@@ -32,19 +23,19 @@ public class CrearMensajeDTO {
         this.contenido = contenido;
     }
 
-    public Usuario getEmisor() {
+    public Long getEmisor() {
         return emisor;
     }
 
-    public void setEmisor(Usuario emisor) {
+    public void setEmisor(Long emisor) {
         this.emisor = emisor;
     }
 
-    public Usuario getReceptor() {
+    public Long getReceptor() {
         return receptor;
     }
 
-    public void setReceptor(Usuario receptor) {
+    public void setReceptor(Long receptor) {
         this.receptor = receptor;
     }
 }

@@ -17,4 +17,13 @@ public class Mensaje {
 
     @ManyToOne(optional = false)
     Usuario receptor;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getContenido() {
+        return contenido;
+    }
+
 }

@@ -18,4 +18,5 @@ public class Comentario {
 
     @ManyToOne(optional = false)
     Publicacion publicacion;
+
 }

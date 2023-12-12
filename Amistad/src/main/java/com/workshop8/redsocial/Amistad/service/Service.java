@@ -9,7 +9,13 @@ import com.workshop8.redsocial.Amistad.repositories.AmistadRepository;
 import com.workshop8.redsocial.Amistad.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatusCode;
+<<<<<<< Updated upstream
 
+=======
+import org.springframework.http.ResponseEntity;
+
+import javax.xml.stream.StreamFilter;
+>>>>>>> Stashed changes
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.StreamSupport;
@@ -32,10 +38,17 @@ public class Service {
     public Amistad crear(CrearAmistadDTO dto) {
         Usuario usuarioSolicitante = this.usuarioRepository
                 .findById(dto.getSolicitanteId())
+<<<<<<< Updated upstream
                 .orElseThrow(() -> new AmistadApiException("El usuario solicitante no existe", HttpStatusCode.valueOf(500)));
         Usuario usuarioSolicitado = this.usuarioRepository
                 .findById(dto.getSolicitadoId())
                 .orElseThrow(() -> new AmistadApiException("El usuario solicitado no existe", HttpStatusCode.valueOf(500)));
+=======
+                .orElseThrow(() -> new AmistadApiException("El usuario solicitante no existe", HttpStatusCode.valueOf(400)));
+        Usuario usuarioSolicitado = this.usuarioRepository
+                .findById(dto.getSolicitadoId())
+                .orElseThrow(() -> new AmistadApiException("El usuario solicitado no existe", HttpStatusCode.valueOf(400)));
+>>>>>>> Stashed changes
 
         if (dto.getSolicitanteId() == dto.getSolicitadoId()){
             throw new AmistadApiException("El Id del solicitante no puede ser el mismo que el Id del solicitado",HttpStatusCode.valueOf(400));
@@ -47,7 +60,11 @@ public class Service {
     public List<Amistad> listar() {
         List<Amistad> lista = StreamSupport.stream(this.repository.findAll().spliterator(), false).toList();
         if (lista.isEmpty()){
+<<<<<<< Updated upstream
             throw new AmistadApiException("Aun no hay soliciitudes de amistad creadas",HttpStatusCode.valueOf(500));
+=======
+            throw new AmistadApiException("Aun no hay soliciitudes de amistad creadas",HttpStatusCode.valueOf(400));
+>>>>>>> Stashed changes
         }
         return lista;
     }
@@ -55,12 +72,17 @@ public class Service {
     public Amistad getAmistadById(Long id) {
         Optional<Amistad> optAmistad = this.repository.findById(id);
         if (!optAmistad.isPresent()) {
+<<<<<<< Updated upstream
             throw  new AmistadApiException("Amistad no existe",HttpStatusCode.valueOf(500));
+=======
+            throw  new AmistadApiException("Amistad no existe",HttpStatusCode.valueOf(400));
+>>>>>>> Stashed changes
         }
         return optAmistad.get();
     }
 
     public Amistad responderAmistad(Long id,String respuesta){
+<<<<<<< Updated upstream
         Amistad optAmistad = this.repository.findById(id).get();
 
         if (optAmistad == null){
@@ -73,5 +95,38 @@ public class Service {
         return this.repository.save(optAmistad);
     }
 
+=======
+        Optional<Amistad> optAmistad = this.repository.findById(id);
+
+        if (!optAmistad.isPresent()){
+            throw new AmistadApiException("Amistad no existe",HttpStatusCode.valueOf(400));
+
+        }else if (optAmistad.get().getIsAceptado().equals("Aceptada")||optAmistad.get().getIsAceptado().equals("Rechazada")){
+            throw new AmistadApiException("La solicitud de amistad con id " + id + " ya fue respondida",HttpStatusCode.valueOf(400));
+        }
+        optAmistad.get().setIsAceptado(respuesta);
+        return this.repository.save(optAmistad.get());
+    }
+
+    public Amistad verificarAmistad(Long solicitante, Long solicitado){
+        try {
+            ResponseEntity<Usuario> IdSolicitante = this.iUsuarioFeignClient.getUsuarioById(solicitante);
+            ResponseEntity<Usuario> IdSolicido = this.iUsuarioFeignClient.getUsuarioById(solicitado);
+
+            Amistad validacionDeAmistad = this.repository.findBySolicitanteAndSolicitado(IdSolicitante.getBody(),IdSolicido.getBody());
+            if (validacionDeAmistad == null){
+                validacionDeAmistad = this.repository.findBySolicitanteAndSolicitado(IdSolicido.getBody(),IdSolicitante.getBody());
+                if (validacionDeAmistad == null){
+                    throw new AmistadApiException("No existe una solicitud entre estos dos usuarios",HttpStatusCode.valueOf(400));
+                }
+            }
+            return validacionDeAmistad;
+
+        } catch (Exception e ){
+            throw new AmistadApiException("Usuario no existe, por favor intentelo de nuevo",HttpStatusCode.valueOf(400));
+        }
+
+    }
+>>>>>>> Stashed changes
 
 }

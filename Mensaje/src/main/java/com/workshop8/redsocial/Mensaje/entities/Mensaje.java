@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Mensaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected Long id;
+    private Long id;
 
     @Column
     private String contenido;
@@ -18,10 +18,29 @@ public class Mensaje {
     @ManyToOne(optional = false)
     Usuario receptor;
 
-    public Mensaje(long id, String contenido, Usuario emisor, Usuario receptor) {
-        this.id = id;
+    public Mensaje() {
+    }
+
+    public Mensaje(String contenido, Usuario emisor, Usuario receptor) {
         this.contenido = contenido;
         this.emisor = emisor;
         this.receptor = receptor;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getContenido() {
+        return contenido;
+    }
+
+    public Usuario getEmisor() {
+        return emisor;
+    }
+
+    public Usuario getReceptor() {
+        return receptor;
+    }
+
 }

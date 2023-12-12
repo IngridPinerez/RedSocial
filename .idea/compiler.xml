@@ -13,6 +13,13 @@
         <module name="Comentario" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Amistad" target="17" />
+      <module name="Comentario" target="17" />
+      <module name="Mensaje" target="17" />
+      <module name="Publicaciones" target="17" />
+      <module name="Usuarios" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

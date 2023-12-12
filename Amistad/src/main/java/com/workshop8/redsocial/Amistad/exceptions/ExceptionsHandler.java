@@ -13,4 +13,9 @@ public class ExceptionsHandler {
 
         return new ResponseEntity<ResponseErrorDTO>(res, e.getCode());
     }
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 }

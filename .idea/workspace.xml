@@ -4,17 +4,198 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="88b3b347-00fc-4b2a-86dc-670a0759094c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/controllers/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Comentario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/services/Service.java" afterDir="false" />
+=======
+    <list default="true" id="d40f6436-19ef-47ab-83ae-b5cbd24c44d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_15_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_15_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_15_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_12_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_12_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_smallrye_jandex_3_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_14_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_14_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_21_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_21_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_20_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_24_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_awaitility_awaitility_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk18on_1_74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_3_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_5_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_junit_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_test_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_4_1_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_4_1_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_4_1_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_4_1_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_4_1_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_6_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/dto/CrearAmistadDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/dto/ResponseErrorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/entities/Amistad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/entities/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/exceptions/AmistadApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/exceptions/ExceptionsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/feignClient/IUsuarioFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/repositories/AmistadRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/repositories/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/consumer/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/dtos/CrearDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/dtos/ResponseError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Comentario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/exceptions/ExceptionsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/exceptions/RedSocialApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/repositories/ComentarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/repositories/PublicacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/repositories/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/services/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/publisher/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/publisher/PublisherConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/AmistadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/AmistadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amistad/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Amistad/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comentario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/controllers/MensajeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/controllers/MensajeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/dtos/CrearMensajeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/dtos/CrearMensajeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Comentario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Mensaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Publicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Publicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/PublisherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/PublisherConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/repositories/MensajeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/repositories/MensajeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/repositories/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/repositories/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/services/MensajeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/services/MensajeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/consumer/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/entities/Publicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/entities/Publicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Publicacion/src/main/java/com/makaia/back4/JpaMySql/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publicacion/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Publicacion/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/controllers/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/dtos/CrearPublicacionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/dtos/CrearPublicacionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/dtos/CrearUsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/dtos/CrearUsuarioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/dtos/ResponseError.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/dtos/ResponseError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Amistad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Amistad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Comentario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Mensaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/repositories/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/repositories/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/services/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/resources/application.properties" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -44,10 +225,43 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2Z0yUcN8lwbLVA1sw47siPin3yb" />
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ZPfoIFhMjzoGhhuZUcIoxi4hsm" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -107,10 +321,32 @@
     <configuration name="ComentarioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Comentario" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop8.redsocial.Comentario.ComentarioApplication" />
+=======
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="Application.MensajeApplication">
+    <configuration name="AmistadApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.workshop8.redsocial.Amistad.AmistadApplication" />
+      <module name="Amistad" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.workshop8.redsocial.Amistad.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="JpaMySqlApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Usuarios" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.makaia.back4.JpaMySql.JpaMySqlApplication" />
@@ -121,27 +357,57 @@
     <configuration name="JpaMySqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Publicaciones" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.makaia.back4.JpaMySql.JpaMySqlApplication" />
+=======
+    <configuration name="JpaMySqlApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.makaia.back4.JpaMySql.JpaMySqlApplication" />
+      <module name="Usuarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.makaia.back4.JpaMySql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="MensajeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Mensaje" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.workshop8.redsocial.Mensaje.MensajeApplication" />
+=======
+    <configuration name="MensajeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.workshop8.redsocial.Mensaje.MensajeApplication" />
+      <module name="Mensaje" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.workshop8.redsocial.Mensaje.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
         <item itemvalue="JUnit.All in Comentario (1)" />
         <item itemvalue="JUnit.All in Comentario" />
+=======
+        <item itemvalue="Application.MensajeApplication" />
+        <item itemvalue="Application.AmistadApplication" />
+        <item itemvalue="Application.JpaMySqlApplication" />
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="88b3b347-00fc-4b2a-86dc-670a0759094c" name="Changes" comment="" />
       <created>1701573308951</created>
       <option name="number" value="Default" />
@@ -161,5 +427,25 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+=======
+      <changelist id="d40f6436-19ef-47ab-83ae-b5cbd24c44d1" name="Changes" comment="" />
+      <created>1702328807468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702328807468</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> Stashed changes
   </component>
 </project>
