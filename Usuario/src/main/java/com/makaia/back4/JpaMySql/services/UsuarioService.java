@@ -58,21 +58,12 @@ public class UsuarioService {
 
     }
 
-<<<<<<< Updated upstream
-    public Usuario getUsuarioById(Long id) {
-        Optional<Usuario> optUsuario = this.repository.findById(id);
-        if (!optUsuario.isPresent()) {
-            throw  new RedSocialApiException("Usuario no existe",HttpStatusCode.valueOf(500));
-        }
-        return optUsuario.get();
-=======
     public ResponseEntity<?> getUsuarioById(Long id) {
         Optional<Usuario> optUsuario = this.repository.findById(id);
         if (!optUsuario.isPresent()) {
             return ResponseEntity.status(HttpStatusCode.valueOf(400)).body("El usuario con id " + id + " no existe");
         }
         return ResponseEntity.ok(optUsuario);
->>>>>>> Stashed changes
     }
 
 

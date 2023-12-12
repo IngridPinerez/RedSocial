@@ -10,12 +10,5 @@ import org.springframework.stereotype.Repository;
 public interface AmistadRepository extends CrudRepository<Amistad, Long> {
 
     @Query
-<<<<<<< Updated upstream
-    Amistad findBySolicitado(Usuario usuario);
-    @Query
-    Amistad findBySolicitante(Usuario usuario);
-=======
     public Amistad findBySolicitanteAndSolicitado(Usuario solicitante, Usuario solicitado);
-
->>>>>>> Stashed changes
 }

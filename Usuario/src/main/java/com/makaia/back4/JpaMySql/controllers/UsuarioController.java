@@ -30,11 +30,7 @@ public class UsuarioController {
     }
 
     @GetMapping("/usuario/{id}")
-<<<<<<< Updated upstream
-    public Usuario getUsuarioById(@PathVariable("id") Long id){
-=======
     public ResponseEntity<?> getUsuarioById(@PathVariable("id") Long id){
->>>>>>> Stashed changes
         return service.getUsuarioById(id);
     }
 }
