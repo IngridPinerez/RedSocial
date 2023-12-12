@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 
-import javax.xml.stream.StreamFilter;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.StreamSupport;
@@ -88,6 +87,9 @@ public class Service {
                 }
             }
             return validacionDeAmistad;
+
+        } catch (AmistadApiException e ){
+            throw new AmistadApiException("No existe una solicitud entre estos dos usuarios",HttpStatusCode.valueOf(400));
 
         } catch (Exception e ){
             throw new AmistadApiException("Usuario no existe, por favor intentelo de nuevo",HttpStatusCode.valueOf(400));
