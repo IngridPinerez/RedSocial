@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88b3b347-00fc-4b2a-86dc-670a0759094c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/exceptions/ExceptionsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/exceptions/ExceptionsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/feignClient/IUsuarioFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/feignClient/IUsuarioFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/repositories/AmistadRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/repositories/AmistadRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amistad/src/main/java/com/workshop8/redsocial/Amistad/service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/controllers/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/services/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/consumer/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Mensaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/PublisherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/PublisherConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/services/MensajeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/services/MensajeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Mensaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,7 @@
       <recent name="com.workshop8.redsocial.Comentario.services" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MensajeApplication">
+  <component name="RunManager" selected="Spring Boot.JpaMySqlApplication (1)">
     <configuration name="All in Comentario (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Comentario" />
       <option name="PACKAGE_NAME" value="" />

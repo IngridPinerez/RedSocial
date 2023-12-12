@@ -3,7 +3,7 @@ package com.workshop8.redsocial.Mensaje.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "mensaje")
 public class Mensaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

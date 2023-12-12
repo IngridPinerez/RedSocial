@@ -4,7 +4,7 @@ import com.workshop8.redsocial.Mensaje.dtos.CrearMensajeDTO;
 import com.workshop8.redsocial.Mensaje.entities.Mensaje;
 import com.workshop8.redsocial.Mensaje.entities.Usuario;
 import com.workshop8.redsocial.Mensaje.exceptions.RedSocialApiException;
-//import com.workshop8.redsocial.Mensaje.publisher.Publisher;
+import com.workshop8.redsocial.Mensaje.publisher.Publisher;
 import com.workshop8.redsocial.Mensaje.repositories.MensajeRepository;
 import com.workshop8.redsocial.Mensaje.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,14 +17,13 @@ import java.util.stream.StreamSupport;
 public class MensajeService {
     MensajeRepository repository;
     UsuarioRepository usuarioRepository;
-    //Publisher publisher;
+    Publisher publisher;
 
     @Autowired
-    public MensajeService(MensajeRepository repository,UsuarioRepository usuarioRepository /*Publisher publisher*/){
+    public MensajeService(MensajeRepository repository,UsuarioRepository usuarioRepository, Publisher publisher){
         this.repository = repository;
         this.usuarioRepository = usuarioRepository;
-        //this.publisher = publisher;
-
+        this.publisher = publisher;
     }
 
     public Mensaje enviar(CrearMensajeDTO dto){
@@ -40,8 +39,12 @@ public class MensajeService {
                     throw new RedSocialApiException("El contenido del mensaje no puede estar vacio");
         }
         Mensaje nuevoMensaje = new Mensaje(dto.getContenido(),emisor,receptor);
+
+        this.publisher.send(emisor.getNombre() + "," + receptor.getNombre());
+
         return this.repository.save(nuevoMensaje);
     }
+
     public List<Mensaje> listar(){
         return StreamSupport
                 .stream(this.repository.findAll().spliterator(), false)

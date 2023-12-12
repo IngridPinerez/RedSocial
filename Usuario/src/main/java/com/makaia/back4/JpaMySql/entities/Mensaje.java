@@ -3,7 +3,7 @@ package com.makaia.back4.JpaMySql.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "mensaje")
 public class Mensaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
