@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88b3b347-00fc-4b2a-86dc-670a0759094c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/consumer/Consumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/entities/Comentario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comentario/src/main/java/com/workshop8/redsocial/Comentario/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/entities/Mensaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/PublisherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/publisher/PublisherConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/services/MensajeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/java/com/workshop8/redsocial/Mensaje/services/MensajeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mensaje/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mensaje/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/java/com/makaia/back4/JpaMySql/entities/Mensaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Usuario/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Usuario/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,25 +53,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Alejo&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DevProjects/JavaProjects/Workshop-8&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "michelle",
+    "last_opened_file_path": "D:/DevProjects/JavaProjects/Workshop-8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DevProjects\JavaProjects\Workshop-8\Publicacion\src\main\java\com\makaia\back4\JpaMySql\publisher" />
@@ -80,7 +88,7 @@
       <recent name="com.workshop8.redsocial.Comentario.services" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ComentarioApplication">
+  <component name="RunManager" selected="Spring Boot.JpaMySqlApplication (1)">
     <configuration name="All in Comentario (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Comentario" />
       <option name="PACKAGE_NAME" value="" />
@@ -93,6 +101,19 @@
       <module name="Comentario" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Workshop-8" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Workshop-8" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

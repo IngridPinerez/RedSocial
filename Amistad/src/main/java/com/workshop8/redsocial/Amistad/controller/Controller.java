@@ -38,6 +38,11 @@ public class Controller {
         return this.service.getAmistadById(id);
     }
 
+    @GetMapping("/validacion/{IdSolicitante}/{IdSolicitado}")
+    public Amistad verificarAmistad(@PathVariable("IdSolicitante") Long IdSolicitante,@PathVariable("IdSolicitado") Long IdSolicitado ){
+        return this.service.verificarAmistad(IdSolicitante,IdSolicitado);
+    }
+
     @PutMapping("/{id}/{respuesta}")
     public Amistad updateAmistad(@PathVariable("id") Long id, @PathVariable("respuesta") String respuesta){
         return this.service.responderAmistad(id,respuesta);

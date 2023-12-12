@@ -1,8 +1,6 @@
 package com.makaia.back4.JpaMySql.services;
 
-import com.makaia.back4.JpaMySql.dtos.CrearPublicacionDTO;
 import com.makaia.back4.JpaMySql.dtos.CrearUsuarioDTO;
-import com.makaia.back4.JpaMySql.entities.Publicacion;
 import com.makaia.back4.JpaMySql.entities.Usuario;
 import com.makaia.back4.JpaMySql.exceptions.RedSocialApiException;
 import com.makaia.back4.JpaMySql.publisher.Publisher;
@@ -11,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -57,12 +55,12 @@ public class UsuarioService {
 
     }
 
-    public Usuario getUsuarioById(Long id) {
+    public ResponseEntity<?> getUsuarioById(Long id) {
         Optional<Usuario> optUsuario = this.repository.findById(id);
         if (!optUsuario.isPresent()) {
-            throw  new RedSocialApiException("Usuario no existe",HttpStatusCode.valueOf(500));
+            return ResponseEntity.status(HttpStatusCode.valueOf(400)).body("El usuario con id " + id + " no existe");
         }
-        return optUsuario.get();
+        return ResponseEntity.ok(optUsuario);
     }
 
 
